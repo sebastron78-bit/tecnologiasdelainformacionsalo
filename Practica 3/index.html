@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #232526, #414345);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 40px;
+        }
+        .cuadro-importante {
+            background: rgba(0, 255, 255, 0.12);
+            border: 2px solid #00fff7;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,255,255,0.2);
+            padding: 24px;
+            margin-bottom: 32px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cuadro-importante h2 {
+            color: #00fff7;
+            margin-top: 0;
+        }
+        ul {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 16px;
+            max-width: 500px;
+            margin: 0 auto 32px auto;
+            box-shadow: 0 2px 12px rgba(0,255,255,0.08);
+        }
+        textarea {
+            background: #232526;
+            color: #00fff7;
+            border: 2px solid #00fff7;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 1rem;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto 32px auto;
+            display: block;
+            box-shadow: 0 2px 12px rgba(0,255,255,0.08);
+        }
+        label {
+            display: block;
+            text-align: center;
+            margin-bottom: 8px;
+            color: #00fff7;
+            font-weight: bold;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #00fff7;
+            margin: 32px auto;
+            max-width: 500px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="cuadro-importante">
+        <h2>Información Importante</h2>
+        <p>
+            Esta es información que no se puede mover. Aquí puedes poner avisos, datos relevantes o cualquier contenido fijo que quieras destacar en tu página.
+        </p>
+    </div>
+    <hr>
+    <ul>
+        <li>hola como estan mi gente del yutuvbe</li>
+        <li>espero que esten bien</li>
+        <li>les deseo lo mejor</li>
+    </ul>
+    <label for="informacion">Escribe tu información aquí:</label>
+    <textarea id="informacion" name="informacion" rows="5" cols="40" placeholder="Escribe aquí..."></textarea>
+<!-- ...existing code... -->
+<ul class="lista-moderna">
+    <li><span class="icono">💡</span> Aprende algo nuevo cada día</li>
+    <li><span class="icono">🚀</span> Mantente motivado y sigue adelante</li>
+    <li><span class="icono">🌐</span> Comparte tus ideas con el mundo</li>
+</ul>
+<!-- ...existing code... -->
+<style>
+    .lista-moderna {
+        background: rgba(0,255,255,0.08);
+        border-radius: 16px;
+        padding: 20px;
+        max-width: 500px;
+        margin: 0 auto 32px auto;
+        box-shadow: 0 2px 16px rgba(0,255,255,0.12);
+        list-style: none;
+    }
+    .lista-moderna li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        font-size: 1.15rem;
+        color: #00fff7;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    .lista-moderna .icono {
+        font-size: 1.5rem;
+        margin-right: 12px;
+        filter: drop-shadow(0 0 6px #00fff7);
+    }
+</style>
+</body>
+
+</html>

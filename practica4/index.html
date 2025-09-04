@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica 4</title>
+</head>
+<body>
+    <p>imagen aivf</p>
+    <img src="img/capitanAmerica.avif" alt="">
+    <p>imagen jpg</p>
+    <img src="img/capitanAmerica.jpg" alt="">
+    <p>imagen blanco y negro</p>
+    <img src="img/capitanAmericabn.jpg" alt="">
+    <p>imagen png</p>
+    <img src="img/capitanAmericapng.png" alt="">
+
+<style>
+    body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        /* Fondo con textura usando SVG base64 */
+        background: url('data:image/svg+xml;utf8,<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" fill="%23e0eafc"/><circle cx="20" cy="20" r="18" fill="none" stroke="%23cfdef3" stroke-width="2"/><circle cx="10" cy="10" r="2" fill="%23cfdef3"/><circle cx="30" cy="30" r="2" fill="%23cfdef3"/></svg>');
+        background-size: 80px 80px;
+        margin: 0;
+        padding: 0;
+    }
+    .cv-container {
+        max-width: 800px;
+        margin: 40px auto;
+        background: #fff;
+        box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
+        border-radius: 18px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+    }
+    .cv-sidebar {
+        background: linear-gradient(135deg, #6dd5ed 0%, #2193b0 100%);
+        color: #fff;
+        width: 260px;
+        padding: 40px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cv-sidebar img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 4px solid #fff;
+        margin-bottom: 20px;
+        object-fit: cover;
+        box-shadow: 0 4px 16px rgba(33,147,176,0.2);
+    }
+    .cv-sidebar h1 {
+        font-size: 2em;
+        margin: 0 0 10px 0;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    .cv-sidebar h2 {
+        font-size: 1.1em;
+        font-weight: 400;
+        margin: 0 0 20px 0;
+        opacity: 0.85;
+    }
+    .cv-sidebar .contact-info {
+        width: 100%;
+        margin-top: 20px;
+        font-size: 0.98em;
+    }
+    .cv-sidebar .contact-info p {
+        margin: 8px 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .cv-main {
+        flex: 1;
+        padding: 40px 40px 40px 30px;
+        color: #333;
+    }
+    .section {
+        margin-bottom: 32px;
+    }
+    .section-title {
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #2193b0;
+        margin-bottom: 12px;
+        letter-spacing: 1px;
+        border-bottom: 2px solid #e0eafc;
+        padding-bottom: 4px;
+        display: inline-block;
+    }
+    .skills-list, .education-list, .experience-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .skills-list li {
+        background: #e0eafc;
+        color: #2193b0;
+        display: inline-block;
+        margin: 4px 8px 4px 0;
+        padding: 6px 16px;
+        border-radius: 16px;
+        font-size: 0.98em;
+        font-weight: 500;
+    }
+    .education-list li, .experience-list li {
+        margin-bottom: 18px;
+    }
+    .edu-title, .exp-title {
+        font-weight: 600;
+        color: #2193b0;
+        font-size: 1em;
+    }
+    .edu-date, .exp-date {
+        font-size: 0.95em;
+        color: #888;
+        margin-left: 8px;
+    }
+    .edu-desc, .exp-desc {
+        font-size: 0.98em;
+        margin-top: 4px;
+        color: #444;
+    }
+    @media (max-width: 700px) {
+        .cv-container {
+            flex-direction: column;
+        }
+        .cv-sidebar {
+            width: 100%;
+            border-radius: 18px 18px 0 0;
+        }
+        .cv-main {
+            padding: 30px 20px;
+        }
+    }
+</style>
+<div class="cv-container">
+    <aside class="cv-sidebar">
+        <img src="img/avbelito.webp" alt="Sebasstian Salomón Foto">
+        <h1>Sebasstian Salomón</h1>
+        <h2>Desarrollador Web &amp; Estudiante</h2>
+        <div class="contact-info">
+            <p>📧 sebasstian.s@example.com</p>
+            <p>📱 +52 123 456 7890</p>
+            <p>📍 León Guanajuato, México</p>
+            <p>🌐 github.com/sebasstian</p>
+        </div>
+        <div style="margin-top:32px;">
+            <span class="section-title">Habilidades</span>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Python</li>
+                <li>Git</li>
+                <li>Diseño UI/UX</li>
+            </ul>
+        </div>
+    </aside>
+    <main class="cv-main">
+        <section class="section">
+            <span class="section-title">Perfil</span>
+            <p>
+                Soy un apasionado desarrollador web con experiencia en la creación de sitios modernos y funcionales. Me encanta aprender nuevas tecnologías y enfrentar retos que me permitan crecer profesionalmente.
+            </p>
+        </section>
+        <section class="section">
+            <span class="section-title">Educación</span>
+            <ul class="education-list">
+                <li>
+                    <span class="edu-title">Licenciatura en Ingeniería en Sistemas</span>
+                    <span class="edu-date">2022 - Presente</span>
+                    <div class="edu-desc">Universidad Nacional Autónoma de México (UNAM)</div>
+                </li>
+                <li>
+                    <span class="edu-title">Curso de Desarrollo Web</span>
+                    <span class="edu-date">2021</span>
+                    <div class="edu-desc">Platzi</div>
+                </li>
+            </ul>
+        </section>
+        <section class="section">
+            <span class="section-title">Experiencia</span>
+            <ul class="experience-list">
+                <li>
+                    <span class="exp-title">Desarrollador Frontend Jr.</span>
+                    <span class="exp-date">2023 - Actualidad</span>
+                    <div class="exp-desc">Startup XYZ<br>Desarrollo de interfaces web responsivas y colaboraciones en proyectos de React.</div>
+                </li>
+                <li>
+                    <span class="exp-title">Prácticas Profesionales</span>
+                    <span class="exp-date">2022</span>
+                    <div class="exp-desc">Empresa ABC<br>Soporte en desarrollo y mantenimiento de sitios web institucionales.</div>
+                </li>
+            </ul>
+        </section>
+        <section class="section">
+            <span class="section-title">Idiomas</span>
+            <ul class="skills-list">
+                <li>Español (Nativo)</li>
+                <li>Inglés (Intermedio)</li>
+            </ul>
+        </section>
+    </main>
+</div>
+</body>
+</html>
