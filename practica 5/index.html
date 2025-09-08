@@ -4,16 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica 5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .audio-section {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+            border: none;
+            background: #fff;
+        }
+    </style>
 </head>
 <body>
     <h1>Podcast de Salomón</h1>
-    <h2>Este podecast tiene como tema los automoviles</h2>
+    <h2>Este podcast tiene como tema los automóviles</h2>
 
-    <audio controls>
-        <source src="Audios/audiosebas.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
+    <div class="audio-section">
+        <audio controls>
+            <source src="Audios/audiosebas.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
 
-    </audio>
-    <iframe width="300" height="150" src="https://youtu.be/sFIXA0zALWU?si=POpML4MXJ8kZsUnt" frameborder="0"></iframe>
+    <div class="gallery">
+        <iframe src="https://www.youtube.com/embed/0n1G60O6YfY?si=BAoBKnaeKppzjEnB" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/_OpBf3MObEc?si=np60eVPgZxlTLDWr" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/xGI3ky4kLwE?si=gZ1-naBkRez3ucKc" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/sFIXA0zALWU?si=IdEI07k_5j3-TXgm" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/taIPXM8ICwo?si=lmYZEv7ulrw9NsCE" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/HL1UzIK-flA?si=Sdt-zmXui9idD6dw" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/uPD0QOGTmMI?si=E5FJ1FW4gHeWgdvy" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/6sUOrL2A3gc?si=5phzNJTHLviDvySd" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/f1jALemBl1s?si=mJBELiDS1ibugw8q" allowfullscreen></iframe>
+    </div>
 </body>
 </html>
