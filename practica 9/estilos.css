@@ -1,0 +1,14 @@
+body {
+    background-color: blueviolet;
+    background: #2a9b86;
+background: linear-gradient(90deg, rgba(42, 155, 134, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(83, 157, 237, 1) 100%);
+
+}
+
+
+h1, h2, h3, p {
+    color: white;
+    text-align: center;
+    font-family: monospace;
+
+}
