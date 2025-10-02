@@ -1,0 +1,50 @@
+body {
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(34, 193, 195, 0.12);
+    gap: 18px;
+    justify-content: center;
+    padding: 32px;
+    border: 2.5px solid #11998e;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px #11998e33;
+}
+
+.cuadro {
+    background: repeating-radial-gradient(circle at 40% 40%, #38ef7d 0 20px, #11998e 22px 40px);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    box-shadow: 0 6px 24px #11998e55, 0 2px 8px #38ef7d33;
+    border: 3px solid #fff;
+    transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.cuadro::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 50%;
+    opacity: 0.12;
+    background: url('https://www.transparenttextures.com/patterns/diagmonds-light.png');
+    pointer-events: none;
+}
+
+.cuadro:hover {
+    background: repeating-radial-gradient(circle at 60% 60%, #11998e 0 20px, #38ef7d 22px 40px);
+    color: #232526;
+    transform: scale(1.13) rotate(-6deg);
+    box-shadow: 0 12px 36px #38ef7d99, 0 2px 12px #11998e66;
+}
