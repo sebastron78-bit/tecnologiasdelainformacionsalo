@@ -1,0 +1,74 @@
+body {
+    background-color: lightblue;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.item {
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    padding: 16px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    height: 280px;              /* rectangular */
+    display: flex;
+    align-items: flex-end;      /* título al fondo */
+    justify-content: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    cursor: crosshair;
+    transition: transform .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    min-height: 180px;       /* para que no colapse en móvil */
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+/* Fondos con imágenes DIRECTAS */
+.item1 { /* 300 */
+    background-image: url("https://play-lh.googleusercontent.com/f2ebzsRoFvJyy98zW1r7gJokFMkwFawNnAUHkmOcwEqx9ZI-g5kQA_tzzY34XVrdNNan");
+}
+.item2 { /* Los locos Addams (1991) */
+    background-image: url("https://m.media-amazon.com/images/I/81vV+L92uPL._UF894,1000_QL80_.jpg");
+}
+.item3 { /* Interstellar */
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg");
+    background-position: top;
+}
+.item4 { /* La La Land */
+    background-image: url("https://images.justwatch.com/poster/123122757/s718/el-padrino.jpg");
+    background-position: top;
+}
+.item5 { /* The Dark Knight */
+    background-image: url("https://play-lh.googleusercontent.com/EGAMPH-ce931SI34Xvp9rrbbiFfWq1qkw2Llg1YeGxG13S5FXt8gbwzDqzre12gD03UvchcWJOaM9NnGzss");
+    background-position: top;
+}
+.item6 { /* Inception */
+    background-image: url("https://play-lh.googleusercontent.com/PzT7y1K1L2vvLJL6eSDt9vSdZRNQr_6rxOOI7OcRL6gLSw89F9Bk8VPPoBB_7anFEHg3yw");
+    background-position: top;
+}
+.item7 { /* The Hobbit: The Battle of the Five Armies */
+    background-image: url("https://play-lh.googleusercontent.com/0XrAlw7ujpMSD1FeXJYkaT_3j9gWMphn1aLm7Uf6JyMandF9uLQMlwBH6lVFwHd2AGVMkg=w240-h480-rw");
+    background-position: top;
+}
+.item8 { /* Dune (2021) */
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_%282021_film%29.jpg");
+    background-position: top;
+}
+
+/* Responsivo */
+@media screen and (max-width: 900px) {
+    .container { grid-template-columns: repeat(2, 1fr); }
+}
+@media screen and (max-width: 520px) {
+    .container { grid-template-columns: 1fr; }
+    .item { height: 240px; }
+}
